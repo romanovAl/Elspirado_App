@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_and_edit_constraint"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/coordinatorLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageDate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_record_voice_over_blue_grey_700_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/valueTextInputLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.75"
+            tools:ignore="ContentDescription"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/valueTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center"
+            android:hint="@string/Expiratory_power"
+            android:textColorHint="@color/primaryTextColor"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/timeEditText"
+            app:layout_constraintStart_toEndOf="@+id/imageDate"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/valueEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textSize="20sp"
+                app:errorEnabled="true"
+
+                tools:targetApi="o">
+
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:editable="false"
+            android:focusable="false"
+            android:gravity="left"
+            android:text="20 апреля 2019 год"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox"
+            app:layout_constraintEnd_toStartOf="@+id/timeEditText"
+            app:layout_constraintStart_toEndOf="@+id/imageDate"
+            app:layout_constraintTop_toBottomOf="@+id/valueTextInputLayout"/>
+
+        <EditText
+            android:id="@+id/timeEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_weight="0.5"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:editable="false"
+            android:focusable="false"
+            android:hint="19:03"
+            android:text="19:03"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/dateEditText"
+            app:layout_constraintEnd_toEndOf="@+id/checkBox"
+            app:layout_constraintTop_toTopOf="@+id/dateEditText"/>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@string/after_medicine"
+            android:textSize="19sp"
+            app:layout_constraintBottom_toBottomOf="@+id/noteTextInputLayout"
+            app:layout_constraintEnd_toStartOf="@+id/noteTextInputLayout"
+            app:layout_constraintStart_toEndOf="@+id/imageDate"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/noteTextInputLayout"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="326dp"
+            android:layout_height="165dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"
+            android:hint="@string/tap_to_add_note"
+            android:textColorHint="@color/primaryTextColor"
+            app:boxStrokeColor="@color/colorPrimary"
+            app:counterEnabled="true"
+            app:counterMaxLength="140"
+            app:counterOverflowTextAppearance="@style/MyCounterText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/noteEditText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top"
+                android:inputType="textCapSentences"
+                android:singleLine="true"
+                android:textSize="16sp"
+                app:counterEnabled="true"
+                app:counterMaxLength="140"
+                app:errorEnabled="true"
+                tools:targetApi="o">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/coordinatorLayout"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <!-- Other components and views -->
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/bottom_app_bar_add_and_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:backgroundTint="@color/colorPrimary"
+            app:fabAlignmentMode="end"
+            app:navigationIcon="@drawable/ic_arrow_back_white_24dp"
+            />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_add_and_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="add"
+            android:src="@drawable/ic_check_white_24dp"
+            app:fabCustomSize="56dp"
+            app:layout_anchor="@id/bottom_app_bar_add_and_edit"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

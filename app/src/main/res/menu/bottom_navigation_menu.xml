@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="График"
+        android:id="@+id/bottomNavigationGraph"
+        android:icon="@drawable/ic_show_chart_white_24dp"/>
+    <item android:title="Список"
+        android:id="@+id/bottomNavigationList"
+        android:icon="@drawable/ic_format_list_bulleted_white_24dp"/>
+    <item android:title="Настройки"
+        android:id="@+id/bottomNavigationSettings"
+        android:icon="@drawable/ic_settings_white_24dp"/>
+</menu>

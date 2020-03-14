@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.libRG:customtextview:2.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13519d62305eaa2abc12863179d6ae2e/jetified-customtextview-2.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/13519d62305eaa2abc12863179d6ae2e/jetified-customtextview-2.2/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.libRG/customtextview/2.2/909f99489b749f2bd758e072211c393211589517/customtextview-2.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.libRG/customtextview/2.2/4396e63db75d9cb9abd8c0cfdac55b245ca4836a/customtextview-2.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

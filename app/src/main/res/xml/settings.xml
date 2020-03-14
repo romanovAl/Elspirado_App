@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="График"
+        app:iconSpaceReserved="false"
+        >
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_5"
+            android:title="Отображать опасные значения"
+            app:iconSpaceReserved="false"
+            />
+
+        <Preference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_4"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Настроить отображение графика"
+            android:title="Отображение графика"
+            app:iconSpaceReserved="false"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Уведомления"
+        app:iconSpaceReserved="false"
+        >
+
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="switch_preference_6"
+            android:title="Включить уведомления"
+            app:iconSpaceReserved="false"
+            />
+
+        <Preference
+            android:defaultValue="Default value"
+            android:key="edit_text_preference_7"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Настроить время уведомлений"
+            android:title="Расписание уведомлений"
+            app:iconSpaceReserved="false"
+            />
+
+    </PreferenceCategory>
+
+    <ListPreference
+        android:defaultValue="1"
+        android:entries="@array/setting_languages"
+        android:entryValues="@array/setting_languages"
+        android:key="list_preference_1"
+        android:title="Выбор языка"
+        app:iconSpaceReserved="false"
+        />
+
+</PreferenceScreen>

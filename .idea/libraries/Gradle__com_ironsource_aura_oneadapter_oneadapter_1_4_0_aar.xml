@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.ironsource.aura.oneadapter:oneadapter:1.4.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/861dd2832756ef39a8bd48e2d40573ba/oneadapter-1.4.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/861dd2832756ef39a8bd48e2d40573ba/oneadapter-1.4.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ironsource.aura.oneadapter/oneadapter/1.4.0/2f3cbc137f1f6e58ee023d470334dff8be04cea3/oneadapter-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.ironsource.aura.oneadapter/oneadapter/1.4.0/d6208883b97fcb117fc845de9acc63494979d280/oneadapter-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

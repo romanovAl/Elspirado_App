@@ -1,0 +1,17 @@
+<component name="libraryTable">
+  <library name="Gradle: com.yandex.android:mobmetricalib:3.6.4@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6eb9dca789c6dc53c49d4ad3517a823/jetified-mobmetricalib-3.6.4/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6eb9dca789c6dc53c49d4ad3517a823/jetified-mobmetricalib-3.6.4/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d6eb9dca789c6dc53c49d4ad3517a823/jetified-mobmetricalib-3.6.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yandex.android/mobmetricalib/3.6.4/93067ce50a8181e7c369b21c61774374ce20dcde/mobmetricalib-3.6.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.yandex.android/mobmetricalib/3.6.4/4335cc2a320896e511b683b025051f8ad9eb5406/mobmetricalib-3.6.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

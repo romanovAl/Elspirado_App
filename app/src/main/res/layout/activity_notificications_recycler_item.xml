@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notificationsConstraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/notificationText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Напоминание 1"
+        android:textColor="@color/secondaryDarkColor"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/notificationTime"
+        app:layout_constraintTop_toBottomOf="@+id/notificationTime" />
+
+    <TextView
+        android:id="@+id/notificationTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="15:00"
+        android:textColor="@color/fake_shadow_start_color"
+        android:textSize="58sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <CheckBox
+        android:id="@+id/checkBoxRepeat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Повторять ежедневно"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/flowLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/flowLayout"
+        app:layout_constraintTop_toBottomOf="@+id/flowLayout"/>
+
+    <View
+        android:id="@+id/view_bottom_line"
+        android:layout_width="0dp"
+        android:layout_height="0.5dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRepeat"/>
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/flowLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_arrow_drop_down_black_24dp" />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/notificationTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/notificationTime"
+        app:layout_constraintTop_toTopOf="@+id/notificationTime"/>
+
+
+    <com.wefika.flowlayout.FlowLayout
+        android:id="@+id/flowLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/notificationTime"
+        app:layout_constraintTop_toBottomOf="@+id/notificationText">
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="пн"
+            android:textOn="пн"
+            android:textSize="12sp"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="93dp"
+            tools:layout_editor_absoluteY="156dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton1"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="вт"
+            android:textOn="вт"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton2"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="ср"
+            android:textOn="ср"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton3"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="чт"
+            android:textOn="чт"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton4"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="пт"
+            android:textOn="пт"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton5"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="сб"
+            android:textOn="сб"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton6"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="вс"
+            android:textOn="вс"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <me.rishabhkhanna.customtogglebutton.CustomToggleButton
+            android:id="@+id/customToggleButton7"
+            android:layout_width="46dp"
+            android:layout_height="43dp"
+            android:layout_margin="8dp"
+            android:background="@color/CheckedTextColor"
+            android:checked="false"
+            android:textOff="пн"
+            android:textOn="пн"
+            app:checkedColor="@color/colorPrimary"
+            app:checkedTextColor="@color/CheckedTextColor"
+            app:radius="20dp"
+            app:uncheckedColor="@color/secondaryLightColor"
+            app:uncheckedTextColor="@color/CheckedTextColor"
+            tools:layout_editor_absoluteX="30dp"
+            tools:layout_editor_absoluteY="154dp" />
+
+    </com.wefika.flowlayout.FlowLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
